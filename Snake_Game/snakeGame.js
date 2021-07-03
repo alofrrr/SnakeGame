@@ -15,7 +15,7 @@ var appleX = appleY = 15;
 
 var rastro = [];
 var cauda = 1;
-var pontos = 0;
+let pontos = 0;
 
 
 function game() {
@@ -81,7 +81,7 @@ function game() {
     const score = `SCORE: ${cauda - 1}`;
     ctx.font = '15pt sketchzone';
     ctx.fillStyle = 'White';
-    ctx.fillText(score, 518, 28);
+    ctx.fillText(score, 518, 26);
 }
 
 function keyPush(event) {

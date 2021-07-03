@@ -29,6 +29,7 @@ body{
     margin: 0%;
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 canvas{
     margin-right: auto;
