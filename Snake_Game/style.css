@@ -11,28 +11,13 @@
     font-size: 28px;
     font-family:  var(--font);
     color:rgba(126, 40, 0, 0.925);
-    position:absolute;
-    margin-left: 38%;
-    margin-top: 0%;
 
 }
 
-#jogo{
-    align-items: center;
-    position:absolute;
-    margin-top: 8%;
-    margin-left: 30%;
-    display:inline-block;
-}
+
 body{
     background-color:rgba(160, 98, 57, 0.925);
-    margin: 0%;
-    position: relative;
-    display: inline-block;
+    text-align: center;
+    align-items: center;
     overflow: hidden;
-}
-canvas{
-    margin-right: auto;
-    margin-left: auto;
-    display:inline-block;
 }
