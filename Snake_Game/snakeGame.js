@@ -3,7 +3,7 @@
     var ctx = stage.getContext("2d");
     document.addEventListener("keydown", keyPush);
 
-    setInterval(game, 100);
+    setInterval(game, 110);
     const vel = 1;
     var vx = vy = 0; //velocidade x e y
     var px = 10;
@@ -34,16 +34,16 @@
             py = 0;
         }
 
-        ctx.fillStyle = "rgba(160, 98, 57, 0.925)";
+        ctx.fillStyle = "#CFE8EF";
         ctx.fillRect(0, 0, stage.width, stage.height);
 
-        ctx.fillStyle = "rgb(252, 49, 49)";
+        ctx.fillStyle = "#164150";
         ctx.beginPath();
         ctx.arc((appleX * tam) + (tam / 2), (appleY * tam) + (tam / 2), tam / 2.5, 0, 2 * Math.PI);
         ctx.fill();
 
 
-        ctx.fillStyle = "rgb(28, 230, 21)";
+        ctx.fillStyle = "#85C7DE";
         for (var i = 0; i < rastro.length; i++) {
             ctx.fillRect(rastro[i].x * tam, rastro[i].y * tam, tam - 1, tam - 1);
             if (pontos > 1) {
@@ -53,18 +53,18 @@
                     iniciou = 0;
                     jog1 = 0;
                     morreu = 1;
-                    clearInterval(game, 100);
+                    clearInterval(game, 110);
                     const gameOver = `Game Over`;
                     ctx.font = '60pt sketchzone';
-                    ctx.fillStyle = 'White';
+                    ctx.fillStyle = '#040D10';
                     ctx.fillText(gameOver, 110, 300);
                     const OverPontos = `Your score: ${pontos - 1}`
                     ctx.font = '25pt sketchzone';
-                    ctx.fillStyle = 'White';
+                    ctx.fillStyle = '#040D10';
                     ctx.fillText(OverPontos, 200, 350);
                     const restart = `press space to restart!`
                     ctx.font = '20pt sketchzone';
-                    ctx.fillStyle = 'White';
+                    ctx.fillStyle = '#040D10';
                     ctx.fillText(restart, 170, 400);
                 }
             }
@@ -86,14 +86,14 @@
             if (morreu != 1) {
                 const Start = `press space to start!`
                 ctx.font = '40pt sketchzone';
-                ctx.fillStyle = 'White';
+                ctx.fillStyle = '#040D10';
                 ctx.fillText(Start, 40, 300);
             }
         }
 
         const score = `SCORE: ${cauda - 1}`;
         ctx.font = '15pt sketchzone';
-        ctx.fillStyle = 'White';
+        ctx.fillStyle = '#040D10';
         ctx.fillText(score, 518, 26);
     }
 

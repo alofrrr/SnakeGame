@@ -10,13 +10,13 @@
     text-align: center;
     font-size: 28px;
     font-family:  var(--font);
-    color:rgba(126, 40, 0, 0.925);
+    color:#0C2831;
 
 }
 
 
 body{
-    background-color:rgba(160, 98, 57, 0.925);
+    background-color:#A0C4E2;
     text-align: center;
     align-items: center;
     overflow: hidden;
