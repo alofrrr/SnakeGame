@@ -8,9 +8,10 @@
 }
 #titulo{
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     font-family:  var(--font);
     color:#0C2831;
+    margin-top: -25px;
 
 }
 
