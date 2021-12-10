@@ -11,7 +11,8 @@
     font-size: 25px;
     font-family:  var(--font);
     color:#0C2831;
-    margin-top: -25px;
+    margin-top: -30px;
+    margin-bottom: -15px;
 
 }
 
@@ -21,4 +22,5 @@ body{
     text-align: center;
     align-items: center;
     overflow: hidden;
+    margin-top: -20px;
 }
